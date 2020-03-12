@@ -1,9 +1,9 @@
 package com.exampler.duck
 
-import android.util.Log
+import android.widget.TextView
 
 class Squeak : QuackBehavior {
-    override fun quack() {
-        Log.d(TAG,"Squeak")
+    override fun quack(view: TextView) {
+        view.text ="Squeak"
     }
 }

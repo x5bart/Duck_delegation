@@ -1,10 +1,10 @@
 package com.exampler.duck
 
-import android.util.Log
+import android.widget.TextView
 
 class FlyWithWings:FlyBehavior {
 
-    override fun fly(){
-        Log.d(TAG,"I’m flying!!")
+    override fun fly(view: TextView){
+       view.text ="I’m flying!!"
     }
 }

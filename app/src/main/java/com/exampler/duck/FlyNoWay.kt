@@ -1,10 +1,10 @@
 package com.exampler.duck
 
-import android.util.Log
+import android.widget.TextView
 
 class FlyNoWay : FlyBehavior {
 
-    override fun fly() {
-        Log.d(TAG, "I can’t fly")
+    override fun fly(view: TextView) {
+        view.text = " I can’t fly"
     }
 }

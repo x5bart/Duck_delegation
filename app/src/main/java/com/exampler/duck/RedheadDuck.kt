@@ -1,6 +1,7 @@
 package com.exampler.duck
 
 import android.util.Log
+import android.widget.TextView
 
 class RedheadDuck:Duck() {
 
@@ -9,7 +10,7 @@ class RedheadDuck:Duck() {
         flyBehavior = FlyRocketPowered()
     }
 
-    override fun display() {
-        Log.d(TAG, "I’m a real Redhead duck")
+    override fun display(view: TextView) {
+        view.text ="I’m a real Redhead duck"
     }
 }

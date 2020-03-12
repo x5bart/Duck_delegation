@@ -1,9 +1,9 @@
 package com.exampler.duck
 
-import android.util.Log
+import android.widget.TextView
 
 class FlyRocketPowered:FlyBehavior {
-    override fun fly() {
-        Log.d(TAG,"I’m flying with a rocket!")
+    override fun fly(view: TextView) {
+        view.text =" I’m flying with a rocket!"
     }
 }

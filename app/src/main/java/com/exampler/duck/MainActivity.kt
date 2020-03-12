@@ -16,41 +16,41 @@ class MainActivity : AppCompatActivity() {
         btn_decoyDuck.setOnClickListener {
             val decoyDuck= DecoyDuck()
             decoyDuck.decoyDuck()
-            decoyDuck.display()
-            decoyDuck.swim()
-            decoyDuck.performQuack()
-            decoyDuck.performFly()
+            decoyDuck.display(tv_display)
+            decoyDuck.swim(tv_swim)
+            decoyDuck.performQuack(tv_quack)
+            decoyDuck.performFly(tv_fly)
         }
         btn_mallardDuck.setOnClickListener {
             val mallardDuck = MallardDuck()
             mallardDuck.MallardDuck()
-            mallardDuck.display()
-            mallardDuck.swim()
-            mallardDuck.performQuack()
-            mallardDuck.performFly()
+            mallardDuck.display(tv_display)
+            mallardDuck.swim(tv_swim)
+            mallardDuck.performQuack(tv_quack)
+            mallardDuck.performFly(tv_fly)
 
             val model = ModelDuck()
             model.ModelDuck()
-            model.performFly()
+            model.performFly(tv_fly)
             model.flyBehavior = FlyRocketPowered()
-            model.performFly()
+            model.performFly(tv_fly)
         }
         btn_redHeadDuck.setOnClickListener {
             val redheadDuck = RedheadDuck()
             redheadDuck.redheadDuck()
-            redheadDuck.display()
-            redheadDuck.swim()
-            redheadDuck.performFly()
-            redheadDuck.performQuack()
+            redheadDuck.display(tv_display)
+            redheadDuck.swim(tv_swim)
+            redheadDuck.performQuack(tv_quack)
+            redheadDuck.performFly(tv_fly)
 
         }
         btn_rubberDuck.setOnClickListener {
             val rubberDuck = RubberDuck()
             rubberDuck.rubberDuck()
-            rubberDuck.display()
-            rubberDuck.swim()
-            rubberDuck.performFly()
-            rubberDuck.performQuack()
+            rubberDuck.display(tv_display)
+            rubberDuck.swim(tv_swim)
+            rubberDuck.performQuack(tv_quack)
+            rubberDuck.performFly(tv_fly)
         }
     }
 }

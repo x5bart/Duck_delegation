@@ -1,25 +1,26 @@
 package com.exampler.duck
 
 import android.util.Log
+import android.widget.TextView
 
 abstract class Duck {
     lateinit var flyBehavior: FlyBehavior
     lateinit var quackBehavior: QuackBehavior
 
-    fun swim() {
-        Log.d(TAG, "All ducks float, even decoys!")
+    fun swim(view: TextView) {
+        view.text ="All ducks float, even decoys!"
     }
 
-    open fun display() {
-        Log.d(TAG,"I'm static on display")
+    open fun display(view: TextView) {
+        view.text ="I'm static on display"
     }
 
-    fun performQuack() {
-        quackBehavior.quack()
+    fun performQuack(view: TextView) {
+        quackBehavior.quack(view)
     }
 
-    fun performFly() {
-        flyBehavior.fly()
+    fun performFly(view: TextView) {
+        flyBehavior.fly(view)
 
     }
 

@@ -1,7 +1,9 @@
 package com.exampler.duck
 
+import android.widget.TextView
+
 interface FlyBehavior {
 
-    fun fly()
+    fun fly(view: TextView)
 
 }

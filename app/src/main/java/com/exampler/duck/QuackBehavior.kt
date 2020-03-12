@@ -1,6 +1,8 @@
 package com.exampler.duck
 
+import android.widget.TextView
+
 interface QuackBehavior {
 
-    fun quack()
+    fun quack(view: TextView)
 }

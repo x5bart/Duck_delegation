@@ -5,7 +5,7 @@ class DecoyDuck:Duck() {
 
 
     fun decoyDuck(){
-        quackBehavior = MuteQuack()
+        quackBehavior = Quack()
         flyBehavior = FlyNoWay()
     }
 }

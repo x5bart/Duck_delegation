@@ -1,11 +1,13 @@
 package com.exampler.duck
 
-import android.util.Log
+import android.widget.TextView
 
 class Quack : QuackBehavior {
 
-    override fun quack() {
-        Log.d(TAG, "Quack")
+
+    override fun quack(view: TextView) {
+        view.text = "Quack"
     }
+
 
 }
