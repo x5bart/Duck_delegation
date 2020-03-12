@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_mallardDuck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/malladr_duck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_redHeadDuck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/redhead_duck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mallardDuck" />
+
+    <Button
+        android:id="@+id/btn_rubberDuck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rubber_duck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_redHeadDuck" />
+
+    <Button
+        android:id="@+id/btn_decoyDuck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decoy_duck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_rubberDuck" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
